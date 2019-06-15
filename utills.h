@@ -15,6 +15,8 @@ void getUserInput(Container<T, std::allocator<T>>& arr, int size);
 template <typename T> 
 bool reverseComparefunction (T i , T j); 
 bool compareStringBySize (std::string i , std::string  j); 
+void printRandoms(int lower, int upper, int count) ;
+std::vector<int> getRandoms(int count,int lower=1, int upper=1000);
 
 
 #endif //STL_SUMMER_2019_UTILLS_H

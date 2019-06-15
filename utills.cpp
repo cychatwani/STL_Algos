@@ -3,7 +3,28 @@
 //
 #include <vector>
 #include <iostream>
+#include <stdlib.h> 
+#include <time.h> 
 
+
+
+std::vector<int> getRandoms(int count,int lower, int upper) 
+{
+    srand ( time(NULL) );
+    std::vector<int> rands; 
+    while(count--)rands.push_back((rand() % (upper - lower + 1)) + lower);
+    return rands; 
+}
+void printRandoms(int lower, int upper,  
+                             int count) 
+{ 
+    int i; 
+    for (i = 0; i < count; i++) { 
+        int num = (rand() % 
+           (upper - lower + 1)) + lower; 
+        printf("%d ", num); 
+    } 
+} 
 std::vector<int> range(int n){
     std::vector<int> range;
     for(int i = 0; i < n; i++){
