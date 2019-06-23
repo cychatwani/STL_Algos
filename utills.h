@@ -18,6 +18,8 @@ bool compareStringBySize (std::string i , std::string  j);
 void printRandoms(int lower, int upper, int count) ;
 std::vector<std::string> getAnimals(int count);
 std::vector<int> getRandoms(int count,int lower=1, int upper=1000);
-
+int getRandom(int lower= 0 , int upper= 100); 
+int  getRandom1();
+int genrator();
 
 #endif //STL_SUMMER_2019_UTILLS_H

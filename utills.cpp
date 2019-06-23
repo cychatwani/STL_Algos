@@ -8,8 +8,21 @@
 #include <time.h> 
 #include<set> 
 
+int genrator(){
+    static int i = 0; 
+    i++; 
+    return i; 
+}
 
-
+int  getRandom1(){
+    srand ( time(NULL) );
+    return (rand() % (100)); 
+}
+    
+int getRandom(int lower, int upper){ 
+    srand ( time(NULL) );
+    return (rand() % (upper - lower + 1)) + lower; 
+}
 std::vector<int> getRandoms(int count,int lower, int upper) 
 {
     srand ( time(NULL) );
