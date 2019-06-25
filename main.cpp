@@ -1,6 +1,7 @@
-#include "valueModifiers.h"
+#include "collection_copy.h"
 using namespace std;
 
 int main(){
-    stl_fill_examples();
+    stl_partial_sort_copy();
+    return 0;
 }

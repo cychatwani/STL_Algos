@@ -8,6 +8,8 @@
 #include <time.h> 
 #include<set> 
 
+bool isEven(int n){return n%2==0;}
+
 int genrator(){
     static int i = 0; 
     i++; 
@@ -27,7 +29,11 @@ std::vector<int> getRandoms(int count,int lower, int upper)
 {
     srand ( time(NULL) );
     std::vector<int> rands; 
-    while(count--)rands.push_back((rand() % (upper - lower + 1)) + lower);
+    while(count--){
+        rands.push_back((rand() % (upper - lower + 1)) + lower);
+        }
+    srand ( time(NULL) );
+    srand ( time(NULL) );
     return rands; 
 }
 std::vector<std::string> getAnimals(int count){

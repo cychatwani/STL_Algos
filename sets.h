@@ -1,0 +1,9 @@
+#include "sets.cpp"
+#ifndef STL_SUMMER_2019_sets_H
+#define STL_SUMMER_2019_sets_H
+void stl_set_difference_example();
+void stl_set_intersection_example();
+void stl_set_symmetric_difference_example();
+void stl_set_union_example();
+void stl_set_algos_examples();
+#endif //STL_SUMMER_2019_sets_H
