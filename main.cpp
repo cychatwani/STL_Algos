@@ -1,7 +1,7 @@
-#include "collection_copy.h"
+#include "if_algos.h"
 using namespace std;
 
 int main(){
-    stl_partial_sort_copy();
+    stl_copy_if();
     return 0;
 }
